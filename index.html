@@ -19,18 +19,42 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="learning-the-beauty-in-songs-neural-singing-voice-beautifier">Voice+</h1>
-
 
 <h2 id="singing-audio-samples">Singing Audio Samples</h2>
 <p>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</p>
 <h3 id="beautification">Beautification</h3>
 <ol>
-  <li>世界比你想象中朦胧, shì jiè bǐ nǐ xiǎng xiàng zhōng méng lóng
-    <table style="width: 100%;">
+  <li>Styles
+    <table style="width: 80%;">
      <thead>
      <tr>
          <th></th>
+         <th>plain</th>
+         <th>Style1(Less Expressive)</th>
+         <th>Style2(More Expressive)</th>
+         <th>Style3(Soft and Hollow)</th>
+         <th>Style4(Expressive and Clear)</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+         <th scope="row">wav</th>
+         <td>-</td>
+         <td><audio controls=""><source src="audio/styles/styleTransfer29_修炼爱情_22.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="audio/styles/styleTransfer29_修炼爱情_57.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="audio/styles/styleTransfer37_空白格_13.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="audio/styles/styleTransfer40_流年_9.wav" type="audio/wav" /></audio></td>
+     </tr>
+ </tbody>
+ </table>
+  </li>
+
+  <li>There You'll Be
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>plain</th>
          <th>Style1</th>
          <th>Style2</th>
          <th>Style3</th>
@@ -40,21 +64,173 @@
      <tbody>
      <tr>
          <th scope="row">wav</th>
-         <td><audio controls=""><source src="audio/styles/styleTransfer29_修炼爱情_22.wav" type="audio/wav" /></audio></td>
-         <td><audio controls=""><source src="audio/styles/styleTransfer29_修炼爱情_57.wav" type="audio/wav" /></audio></td>
-         <td><audio controls=""><source src="audio/styles/styleTransfer37_空白格_13.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/thereYouBeOrig.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/letItGo1Plain.wav" type="audio/wav" /></audio></td>
+         <td>-</td>
+         <td>-</td>
          <td><audio controls=""><source src="audio/styles/styleTransfer40_流年_9.wav" type="audio/wav" /></audio></td>
      </tr>
  </tbody>
  </table>
   </li>
-<h3 id="style-comparison">Style Comparison</h3>
 
+  <li>Let It Go 1
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>plain</th>
+         <th>Style1</th>
+         <th>Style2</th>
+         <th>Style3</th>
+         <th>Style4</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+         <th scope="row">wav</th>
+         <td><audio controls=""><source src="./clippedWav/letItGo1Orig.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/letItGo1Plain.wav" type="audio/wav" /></audio></td>
+         <td>-</td>
+         <td>-</td>
+         <td><audio controls=""><source src="./clippedWav/letItGo1Style.wav" type="audio/wav" /></audio></td>
+     </tr>
+ </tbody>
+ </table>
+  </li>
 
-      <footer class="site-footer">
+  <li>Let It Go 2
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>plain</th>
+         <th>Style1</th>
+         <th>Style2</th>
+         <th>Style3</th>
+         <th>Style4</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+         <th scope="row">wav</th>
+         <td><audio controls=""><source src="./clippedWav/letItGo2Orig.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/letItGo2Plain.wav" type="audio/wav" /></audio></td>
+         <td>-</td>
+         <td>-</td>
+         <td><audio controls=""><source src="./clippedWav/letItGo2Beaut.wav" type="audio/wav" /></audio></td>
+      </tr>
+ </tbody>
+ </table>
+  </li>
+
+  <li>21 Guns
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>Original</th>
+         <th>Plain</th>
+         <th>Style1</th>
+         <th>Style2</th>
+         <th>Style3</th>
+         <th>Style4</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+         <th scope="row">wav</th>
+         <td><audio controls=""><source src="./clippedWav/21gunsOrig.wav" type="audio/wav" /></audio></td>
+         <td>-</td>
+         <td><audio controls=""><source src="./clippedWav/21gunsStyle1.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/21gunsStyle2.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/21gunsStyle3.wav" type="audio/wav" /></audio></td>
+         <td><audio controls=""><source src="./clippedWav/21gunsStyle4.wav" type="audio/wav" /></audio></td>
+     </tr>
+ </tbody>
+ </table>
+  </li>
+
+  <li>Happy Ending
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>plain</th>
+         <th>Style1</th>
+         <th>Style2</th>
+         <th>Style3</th>
+         <th>Style4</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <th scope="row">wav</th>
+        <td><audio controls=""><source src="./clippedWav/happyEndingOrig.wav" type="audio/wav" /></audio></td>
+        <td>-</td>
+        <td><audio controls=""><source src="./clippedWav/happyEndingStyle1.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/happyEndingStyle2.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/happyEndingStyle3.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/happyEndingStyle4.wav" type="audio/wav" /></audio></td>
+    </tr>
+ </tbody>
+ </table>
+  </li>
+
+  <li>whole New World
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>plain</th>
+         <th>Style1</th>
+         <th>Style2</th>
+         <th>Style3</th>
+         <th>Style4</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <th scope="row">wav</th>
+        <td><audio controls=""><source src="./clippedWav/wholeNewWorldOrig.wav" type="audio/wav" /></audio></td>
+        <td>-</td>
+        <td><audio controls=""><source src="./clippedWav/wholeNewWorldStyle1.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/wholeNewWorldStyle2.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/wholeNewWorldStyle3.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/wholeNewWorldStyle4.wav" type="audio/wav" /></audio></td>
+    </tr>
+ </tbody>
+ </table>
+  </li>
+
+  <li>Hai Kuo Tian Kong (Cantonese)
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th></th>
+         <th>plain</th>
+         <th>Style1</th>
+         <th>Style2</th>
+         <th>Style3</th>
+         <th>Style4</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <th scope="row">wav</th>
+        <td><audio controls=""><source src="./clippedWav/haiKuoTianKongOrig.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="./clippedWav/haiKuoTianKongPlain.wav" type="audio/wav" /></audio></td>
+        <td>-</td>
+        <td>-</td>
+        <td><audio controls=""><source src="./clippedWav/haiKuoTianKongBeaut.wav" type="audio/wav" /></audio></td>
+     </tr>
+ </tbody>
+ </table>
+  </li>
+      <!-- <footer class="site-footer">
         
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
+      </footer> -->
     </main>
   </body>
 </html>
