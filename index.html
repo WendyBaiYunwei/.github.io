@@ -27,10 +27,10 @@
     <table style="width: 80%;">
      <thead>
      <tr>
-         <th>Style 1: Female1</th>
-         <th>Style 2: Female2</th>
-         <th>Style 3: Male</th>
-         <th>Style 4: Female3</th>
+         <th>Style 1: Female1 (In Training Data)</th>
+         <th>Style 2: Female2 (NOT In Training Data)</th>
+         <th>Style 3: Male (In Training Data)</th>
+         <th>Style 4: Female3 (NOT In Training Data)</th>
      </tr>
      </thead>
      <tbody>
@@ -44,16 +44,18 @@
  </table>
   </li>
 
-  <li>Beipan
+  <li>Bei Pan
     <table style="width: 80%;">
      <thead>
      <tr>
+         <th>Original</th>
          <th>Style 2: Female2</th>
          <th>Style 4: Female3</th>
      </tr>
      </thead>
      <tbody>
       <tr>
+        <td><audio controls=""><source src="audio/style_transfer_before/beipan_orig_clipped.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/style_transfer_after/beipan_test_cut.wav" type="audio/wav" /></audio></td>
        <td><audio controls=""><source src="audio/style_transfer_after/beipan_yongyou_cut.wav" type="audio/wav" /></audio></td>
     </tr>
@@ -65,12 +67,14 @@
     <table style="width: 80%;">
      <thead>
      <tr>
+      <th>Original</th>
       <th>Style 2: Female2</th>
       <th>Style 3: Male</th>
      </tr>
      </thead>
      <tbody>
       <tr>
+        <td><audio controls=""><source src="audio/style_transfer_before/love_story_clipped.wav" type="audio/mp3" /></audio></td>
         <td><audio controls=""><source src="audio/style_transfer_after/love_story_test_clipped.wav" type="audio/mp3" /></audio></td>
         <td><audio controls=""><source src="audio/style_transfer_after/love_story_红玫瑰_clipped.wav" type="audio/wav" /></audio></td>
     </tr>
@@ -133,6 +137,25 @@
  </table>
   </li> -->
 
+  <li>Zui Chu De Meng Xiang (Unnatural high-pitch voice)
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Original Style</th>
+         <th>Style 2</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td><audio controls=""><source src="audio/other/zuichu_clipped.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/other/zuichu_origstyle.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/other/zuichu_test.wav" type="audio/wav" /></audio></td>
+      </tr>
+    </tbody>
+  </table>
+   </li>
+
   <li>Whole New World (Unnatural high-pitch voice, beautified with style 1)
     <table style="width: 80%;">
      <thead>
@@ -167,7 +190,7 @@
   </table>
    </li>
 
-  <p>How does one of our baselines, the synthesized singing sound like? (While synthesized singing can remove random details in singing voice, the generated singing voice can be excessively smoothened. Moreover, speaker consistency is worse-off.)</p>
+  <p>While synthesized singing can remove random details in singing voice, the generated singing voice can be excessively smoothened. </p>
   <li>Hai Kuo Tian Kong (With Tremble in Voice, beautified with style 2)
     <table style="width: 80%;">
      <thead>
@@ -208,9 +231,9 @@
 </table>
 </li>
 <p>
-  To conclude, for style transfer, we try to change the voice details based on a given audio style while maintaining speaker consistency.
-  For beautification, random ugly voice details are reduced. One can also make changes to one's voice style while maintaining speaker identity. 
-  Lastly, our method has better speaker consistency compared to the synthesized singing.
+  To conclude, for style transfer, we try to change the voice details based on a given audio style while maintaining speaker consistency. 
+  One also integrate the original singing style into the initial singing to enhance speaker consistency. 
+  For stabilization, random ugly voice details like tremble and forcefulness are reduced. 
 </p>
     </main>
   </body>
