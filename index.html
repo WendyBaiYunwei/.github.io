@@ -12,7 +12,7 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">Voice+</h1>
+      <h1 class="project-name">FlexVoice</h1>
       <h2 class="project-tagline"></h2>
       
       
@@ -20,95 +20,16 @@
 
     <main id="content" class="main-content" role="main">
 
-<i>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</i>
+<!-- <i>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</i> -->
 <ol>
-<p>Welcome to Voie+. Firstly, let's examine the style transfer capability of the AdaIN Decoder. Here are 4 available styles:</p>
-  <li>Styles
-    <table style="width: 80%;">
-     <thead>
-     <tr>
-         <th>Style 1: Female1 (In Training Data)</th>
-         <th>Style 2: Female2 (NOT In Training Data)</th>
-         <th>Style 3: Male (In Training Data)</th>
-         <th>Style 4: Female3 (NOT In Training Data)</th>
-     </tr>
-     </thead>
-     <tbody>
-     <tr>
-         <td><audio controls=""><source src="audio/styles/遇见_clipped.wav" type="audio/wav" /></audio></td>
-         <td><audio controls=""><source src="audio/styles/test_clipped.wav" type="audio/wav" /></audio></td>
-         <td><audio controls=""><source src="audio/styles/红玫瑰_clipped.wav" type="audio/wav" /></audio></td>
-         <td><audio controls=""><source src="audio/styles/style4.wav" type="audio/wav" /></audio></td>
-        </tr>
- </tbody>
- </table>
-  </li>
+  <p>Welcome to FlexVoice. Let's first stabilize singing voice. </p>
 
-  <li>Bei Pan
+  <li>Happy Ending (Tremble at "Memories")
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Style 2: Female2</th>
-         <th>Style 4: Female3</th>
-     </tr>
-     </thead>
-     <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/style_transfer_before/beipan_orig_clipped.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/style_transfer_after/beipan_test_cut.wav" type="audio/wav" /></audio></td>
-       <td><audio controls=""><source src="audio/style_transfer_after/beipan_yongyou_cut.wav" type="audio/wav" /></audio></td>
-    </tr>
- </tbody>
- </table>
-  </li> 
-
-  <li>Love Story
-    <table style="width: 80%;">
-     <thead>
-     <tr>
-      <th>Original</th>
-      <th>Style 2: Female2</th>
-      <th>Style 3: Male</th>
-     </tr>
-     </thead>
-     <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/style_transfer_before/love_story_clipped.wav" type="audio/mp3" /></audio></td>
-        <td><audio controls=""><source src="audio/style_transfer_after/love_story_test_clipped.wav" type="audio/mp3" /></audio></td>
-        <td><audio controls=""><source src="audio/style_transfer_after/love_story_红玫瑰_clipped.wav" type="audio/wav" /></audio></td>
-    </tr>
- </tbody>
- </table>
-  </li>
-
-  <!-- <li>Let It Go
-    <table style="width: 80%;">
-     <thead>
-     <tr>
-      <th>Style 2: Female2</th>
-      <th>Style 3: Male</th>
-     </tr>
-     </thead>
-     <tbody>
-      <tr>  
-        <td><audio controls=""><source src="audio/style_transfer_after/let_it_go_ugly_test__mode_style.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/style_transfer_after/let_it_go_ugly_红玫瑰__mode_style.wav" type="audio/wav" /></audio></td>
-    </tr>
- </tbody>
- </table>
-  </li> -->
-
-  <p>Essentially, we try to change the voice without affecting speaker identity nor lyrics utterance. </p>
-    
-  <p>Let's now beautify singing voice. Notice the softening of certain random details like cracks in the original singing voice:</p>
-
-  <!-- <li>Happy Ending (With crack in voice, beautified with style 2)
-    <table style="width: 80%;">
-     <thead>
-     <tr>
-         <th>Original</th>
-         <th>Beautified</th>
+         <th>Stabilized</th>
      </tr>
      </thead>
      <tbody>
@@ -118,123 +39,122 @@
     </tr>
  </tbody>
  </table>
-  </li> -->
+  </li>
 
-  <!-- <li>Hai Kuo Tian Kong (With tremble in voice, beautified with style 2)
+  <li>The Day You Went Away (Unnatural high-pitch Voice)
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Beautified</th>
+         <th>Stabilized</th>
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/beaut/haiKuoTianKongOrig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/beaut_after/haiKuoTianKongOrig_test__mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/stab_before/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/stab_after/theDayYouWentAwayUnnatural_theDayYouWentAwayUnnatural_mode_style.wav" type="audio/wav" /></audio></td>
      </tr>
  </tbody>
  </table>
-  </li> -->
+  </li>
 
-  <li>Zui Chu De Meng Xiang (Unnatural high-pitch voice)
+  <li>Colors of the Wind (Unsmooth Voice at "Grin")
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Original Style</th>
-         <th>Style 2</th>
+         <th>Stabilized</th>
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/other/zuichu_clipped.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/other/zuichu_origstyle.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/other/zuichu_test.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/stab_before/colors_before.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/stab_after/colors_before_colors_before_mode_style.wav" type="audio/wav" /></audio></td>
+     </tr>
+ </tbody>
+ </table>
+  </li>
+
+  <p>Now, let us check the voice change capability. </p>
+  <li>Bei Pan
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Target</th>
+         <th>Generation</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td><audio controls=""><source src="audio/style_transfer_before/beipan_orig_clipped.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/styles/test_clipped.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/style_transfer_after/beipan_test_cut.wav" type="audio/wav" /></audio></td>
       </tr>
-    </tbody>
+  </tbody>
   </table>
-   </li>
-
-  <!-- <li>Whole New World (Unnatural high-pitch voice, beautified with style 1)
+  </li>
+  
+  <li>Xiu Lian Ai Qing
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Beautified</th>
+         <th>Target</th>
+         <th>Generation</th>
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/beaut/wholeNewWorld_clipped.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/beaut_after/wholeNewWorld_clipped_遇见__mode_style.wav" type="audio/wav" /></audio></td>
-     </tr>
-    </tbody>
+        <td><audio controls=""><source src="audio/voice_change/xiulian_6_orig.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/17.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/xiulian_6_17.wav" type="audio/wav" /></audio></td>
+      </tr>
+  </tbody>
   </table>
-   </li> -->
+  </li>
 
-   <!-- <li>You Raise Me Up (Unnatural forcefulness in initial singing, beautified with style 1)
+  
+  <li>Tian Hei Hei Singer 1
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Beautified</th>
+         <th>Target</th>
+         <th>Generation</th>
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/beaut/you_raise_me_up_ugly.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/beaut_after/you_raise_me_up_ugly_遇见__mode_style.wav" type="audio/wav" /></audio></td>
-     </tr>
-    </tbody>
-  </table>
-   </li> -->
-
-  <p>While synthesized singing can remove random details in singing voice, the generated singing voice can be excessively smoothened. </p>
-  <li>Hai Kuo Tian Kong (With Tremble in Voice, beautified with style 2)
-    <table style="width: 80%;">
-     <thead>
-     <tr>
-         <th>Original</th>
-         <th>Synthesized Singing</th>
-         <th>Ours</th>
-     </tr>
-     </thead>
-     <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/beaut/haiKuoTianKongOrig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/other/haiKuoTianKong_syn.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/beaut_after/haiKuoTianKongOrig_test__mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/40_tianheiehi_orig.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/10.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/40_tianheihei_10.wav" type="audio/wav" /></audio></td>
       </tr>
 </tbody>
 </table>
 </li>
 
-<p>Here is another example:</p>
-
-<li>Lazy Song (Original Style)
+<li>Tian Hei Hei Singer 2
   <table style="width: 80%;">
    <thead>
    <tr>
        <th>Original</th>
-       <th>Synthesized Singing (Partial)</th>
-       <th>Ours (With original style)</th>
+       <th>Target</th>
+       <th>Generation</th>
    </tr>
    </thead>
    <tbody>
     <tr>
-      <td><audio controls=""><source src="audio/other/Lazy_song4.wav" type="audio/wav" /></audio></td>
-      <td><audio controls=""><source src="audio/other/Lazy_syn.wav" type="audio/wav" /></audio></td>
-      <td><audio controls=""><source src="audio/other/Lazy_song4_bad_Lazy_song4_bad__mode_style.wav" type="audio/wav" /></audio></td>
+      <td><audio controls=""><source src="audio/voice_change/44_tianheihei_orig.wav" type="audio/wav" /></audio></td>
+      <td><audio controls=""><source src="audio/voice_change/40.wav" type="audio/wav" /></audio></td>
+      <td><audio controls=""><source src="audio/voice_change/44_tianheihei_40.wav" type="audio/wav" /></audio></td>
     </tr>
 </tbody>
 </table>
 </li>
-<p>
-  To conclude, for style transfer, we try to change the voice details based on a given audio style while maintaining speaker consistency. 
-  One can also integrate the original singing style into the initial singing to enhance speaker consistency. 
-  For stabilization, random ugly voice details like tremble and forcefulness are reduced. 
-</p>
+
+
+
     </main>
   </body>
 </html>
