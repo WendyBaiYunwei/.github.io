@@ -22,14 +22,14 @@
 
 <!-- <i>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</i> -->
 <ol>
-  <p>Welcome to FlexVoice. Let's first stabilize singing voice. </p>
+  <p>Welcome to FlexVoice. Let's first try to remove some voice defects. </p>
 
   <li>Happy Ending (Tremble at "Memories")
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Generation</th>
+         <th>FlexVoice</th>
      </tr>
      </thead>
      <tbody>
@@ -46,7 +46,7 @@
      <thead>
      <tr>
          <th>Original</th>
-         <th>Generation</th>
+         <th>FlexVoice</th>
      </tr>
      </thead>
      <tbody>
@@ -63,7 +63,7 @@
      <thead>
      <tr>
          <th>Original</th>
-         <th>Generation</th>
+         <th>FlexVoice</th>
      </tr>
      </thead>
      <tbody>
@@ -75,14 +75,15 @@
  </table>
   </li>
 
-  <p>Now, let's check the voice change capability. </p>
+  <p>Now, let's check the style transfer effect. </p>
   <li>Bei Pan
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
          <th>Target</th>
-         <th>Generation (50% target + 50% original)</th>
+         <th>FlexVoice (50% target + 50% original)</th>
+         <th>VITs</th>
      </tr>
      </thead>
      <tbody>
@@ -90,6 +91,7 @@
         <td><audio controls=""><source src="audio/style_transfer_before/beipan_orig_clipped.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/styles/test_clipped.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/style_transfer_after/beipan_test_cut.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/beipan_test.wav" type="audio/wav" /></audio></td>
       </tr>
   </tbody>
   </table>
@@ -101,7 +103,9 @@
      <tr>
          <th>Original</th>
          <th>Target</th>
-         <th>Generation</th>
+         <th>FlexVoice</th>
+         <th>VITs</th>
+         
      </tr>
      </thead>
      <tbody>
@@ -109,6 +113,8 @@
         <td><audio controls=""><source src="audio/voice_change/xiulian_6_orig.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/voice_change/17.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/voice_change/xiulian_6_17.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/xiulian_17.wav" type="audio/wav" /></audio></td>
+        
       </tr>
   </tbody>
   </table>
@@ -121,14 +127,18 @@
      <tr>
          <th>Original</th>
          <th>Target</th>
-         <th>Generation</th>
-     </tr>
+         <th>FlexVoice</th>
+         <th>VITs</th>
+         
+        </tr>
      </thead>
      <tbody>
       <tr>
         <td><audio controls=""><source src="audio/voice_change/40_tianheiehi_orig.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/voice_change/10.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/voice_change/40_tianheihei_10.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/voice_change/40_10.wav" type="audio/wav" /></audio></td>
+        
       </tr>
 </tbody>
 </table>
@@ -140,21 +150,22 @@
    <tr>
        <th>Original</th>
        <th>Target</th>
-       <th>Generation</th>
-   </tr>
+       <th>FlexVoice</th>
+       <th>VITs</th>
+       
+      </tr>
    </thead>
    <tbody>
     <tr>
       <td><audio controls=""><source src="audio/voice_change/44_tianheihei_orig.wav" type="audio/wav" /></audio></td>
       <td><audio controls=""><source src="audio/voice_change/40.wav" type="audio/wav" /></audio></td>
       <td><audio controls=""><source src="audio/voice_change/44_tianheihei_40.wav" type="audio/wav" /></audio></td>
+      <td><audio controls=""><source src="audio/voice_change/44_40.wav" type="audio/wav" /></audio></td>
+      
     </tr>
 </tbody>
 </table>
 </li>
-
-
-
     </main>
   </body>
 </html>
