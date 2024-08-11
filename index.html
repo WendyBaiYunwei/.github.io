@@ -29,14 +29,14 @@
      <thead>
      <tr>
          <th>Original</th>
-         <th>FlexVoice</th>
+         <th>Defect Reducer Output</th>
          <!-- <th>VITs</th> -->
      </tr>
      </thead>
      <tbody>
       <tr>       
-        <td><audio controls=""><source src="audio/beaut/happyEndingOrig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/beaut_after/happyEndingOrig_test__mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/orig/happyEndingOrig.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/reduced/happyEndingOrig_test__mode_style.wav" type="audio/wav" /></audio></td>
         <!-- <td><audio controls=""><source src="audio/recon/happyending_vits.wav" type="audio/wav" /></audio></td> -->
     </tr>
  </tbody>
@@ -48,14 +48,14 @@
      <thead>
      <tr>
          <th>Original</th>
-         <th>FlexVoice</th>
+         <th>Defect Reducer Output</th>
          <!-- <th>VITs</th> -->
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/stab_before/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/stab_after/theDayYouWentAwayUnnatural_theDayYouWentAwayUnnatural_mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/orig/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/reduced/theDayYouWentAwayUnnatural_theDayYouWentAwayUnnatural_mode_style.wav" type="audio/wav" /></audio></td>
         <!-- <td><audio controls=""><source src="audio/recon/theDay_vits.wav" type="audio/wav" /></audio></td> -->
      </tr>
  </tbody>
@@ -67,135 +67,134 @@
      <thead>
      <tr>
          <th>Original</th>
-         <th>FlexVoice</th>
+         <th>Defect Reducer Output</th>
          <!-- <th>VITs</th> -->
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/stab_before/colors_before.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/stab_after/colors_before_colors_before_mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/orig/colors_before.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/reduced/colors_before_colors_before_mode_style.wav" type="audio/wav" /></audio></td>
         <!-- <td><audio controls=""><source src="audio/recon/colors_vits.wav" type="audio/wav" /></audio></td> -->
      </tr>
  </tbody>
  </table>
   </li>
 
-  <p>Now, let's check the style transfer effect. </p>
-  <li>Bei Pan
+  <p>Now, let's check the base synthesizer output and its interpolation with defect-reduced singing. </p>
+  <li>Happy Ending
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Target</th>
-         <th>FlexVoice (50% target + 50% original)</th>
-         <th>VITs</th>
+         <th>Base Synthesizer Output</th>
+         <th>Interpolation (Preference Adaptor) Output</th>
      </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/style_transfer_before/beipan_orig_clipped.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/styles/test_clipped.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/style_transfer_after/beipan_test_cut.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/beipan_test.wav" type="audio/wav" /></audio></td>
-      </tr>
-  </tbody>
-  </table>
-  </li>
-<!--   
-  <li>Xiu Lian Ai Qing
-    <table style="width: 80%;">
-     <thead>
-     <tr>
-         <th>Original</th>
-         <th>Target</th>
-         <th>FlexVoice</th>
-         <th>VITs</th>
-         
-     </tr>
-     </thead>
-     <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/voice_change/xiulian_6_orig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/17.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/xiulian_6_17.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/xiulian_17.wav" type="audio/wav" /></audio></td>
-        
+        <td><audio controls=""><source src="audio/orig/happyEndingOrig.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/base_out/happyending_vits.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/happyEndingOrig_happyending_vits_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
   </tbody>
   </table>
   </li>
 
-   -->
-
-   <li>Tian Hei Hei Singer 1
+   <li>The Day You Went Away
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Target</th>
-         <th>FlexVoice</th>
-         <th>VITs</th>
-         
-        </tr>
+         <th>Base Synthesizer Output</th>
+         <th>Interpolation (Preference Adaptor) Output</th>
+     </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/voice_change/44_tianheihei_orig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/40.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/44_tianheihei_40.wav" type="audio/wav" /></audio></td>
-        <!-- <td><audio controls=""><source src="audio/voice_change/44_40.wav" type="audio/wav" /></audio></td> -->
-        
+        <td><audio controls=""><source src="audio/orig/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/base_out/theDay_vits.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/theDay_vits_theDayYouWentAwayUnnatural_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
   </tbody>
   </table>
   </li>
   
-  <li>Tian Hei Hei Singer 2
+  <li>Colors of the Wind
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Target</th>
-         <th>FlexVoice</th>
-         <!-- <th>VITs</th> -->
-         
-        </tr>
+         <th>Base Synthesizer Output</th>
+         <th>Interpolation (Preference Adaptor) Output</th>
+     </tr>
      </thead>
      <tbody>
       <tr>
-        <td><audio controls=""><source src="audio/voice_change/40_tianheiehi_orig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/10.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/voice_change/40_tianheihei_10.wav" type="audio/wav" /></audio></td>
-        <!-- <td><audio controls=""><source src="audio/voice_change/40_10.wav" type="audio/wav" /></audio></td> -->
-        
+        <td><audio controls=""><source src="audio/orig/colors_before.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/base_out/colors_vits.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/colors_before_colors_vits_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
-</tbody>
-</table>
-</li>
+  </tbody>
+  </table>
+  </li>
 
-<li>Fu Qin Xie De San Wen Shi
-  <table style="width: 80%;">
-   <thead>
-   <tr>
-       <th>Original</th>
-       <th>Target</th>
-       <th>FlexVoice</th>
-       <!-- <th>VITs</th> -->
-       
+  <li>Let It Go
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Base Synthesizer Output</th>
+         <th>Interpolation (Preference Adaptor) Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td><audio controls=""><source src="audio/orig/letItGoMale.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/base_out/letItGoMale_svc_out.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/letItGoMale_svc_out_letItGoMale_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
-   </thead>
-   <tbody>
-    <tr>
-      <td><audio controls=""><source src="audio/voice_change/27_父亲写的散文诗_6.wav" type="audio/wav" /></audio></td>
-      <td><audio controls=""><source src="audio/voice_change/40_流年_1.wav" type="audio/wav" /></audio></td>
-      <td><audio controls=""><source src="audio/voice_change/fuqin_liunian.wav" type="audio/wav" /></audio></td>
-      <!-- <td><audio controls=""><source src="audio/voice_change/40_10.wav" type="audio/wav" /></audio></td> -->
-      
-    </tr>
-</tbody>
-</table>
-</li>
+  </tbody>
+  </table>
+  </li>
+  
+  <li>Rolling in the Deep
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Base Synthesizer Output</th>
+         <th>Interpolation (Preference Adaptor) Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td><audio controls=""><source src="audio/orig/rolling.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/base_out/rolling_svc_out.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/rolling_svc_out_rolling_mode_style.wav" type="audio/wav" /></audio></td>
+      </tr>
+  </tbody>
+  </table>
+  </li>
+
+  <li>You Raise Me Up
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Base Synthesizer Output</th>
+         <th>Interpolation (Preference Adaptor) Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td><audio controls=""><source src="audio/orig/you_raise_me_up_ugly.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/base_out/you_raise_me_up_ugly_svc_out.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/you_raise_me_up_ugly_svc_out_you_raise_me_up_ugly_mode_style_pca.wav" type="audio/wav" /></audio></td>
+      </tr>
+  </tbody>
+  </table>
+  </li>
 
     </main>
   </body>
