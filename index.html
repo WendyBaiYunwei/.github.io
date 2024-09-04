@@ -22,7 +22,7 @@
 
 <!-- <i>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</i> -->
 <ol>
-  <p>Welcome to FlexVoice. Let's first try to remove some voice defects. </p>
+  <p>Welcome to FlexVoice. Let's first examine the Defect Reducer effect. </p>
 
   <li>Happy Ending (Tremble at "Memories")
     <table style="width: 80%;">
@@ -30,56 +30,50 @@
      <tr>
          <th>Original</th>
          <th>Defect Reducer Output</th>
-         <!-- <th>VITs</th> -->
      </tr>
      </thead>
      <tbody>
       <tr>       
         <td><audio controls=""><source src="audio/orig/happyEndingOrig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/reduced/happyEndingOrig_test__mode_style.wav" type="audio/wav" /></audio></td>
-        <!-- <td><audio controls=""><source src="audio/recon/happyending_vits.wav" type="audio/wav" /></audio></td> -->
-    </tr>
+        <td><audio controls=""><source src="audio/reduced/2_test_mode_style.wav" type="audio/wav" /></audio></td>
+        </tr>
  </tbody>
  </table>
   </li>
 
-  <li>The Day You Went Away (Unnatural high-pitch Voice)
+  <!-- <li>The Day You Went Away (Unnatural high-pitch Voice)
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
          <th>Defect Reducer Output</th>
-         <!-- <th>VITs</th> -->
      </tr>
      </thead>
      <tbody>
       <tr>
         <td><audio controls=""><source src="audio/orig/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/reduced/theDayYouWentAwayUnnatural_theDayYouWentAwayUnnatural_mode_style.wav" type="audio/wav" /></audio></td>
-        <!-- <td><audio controls=""><source src="audio/recon/theDay_vits.wav" type="audio/wav" /></audio></td> -->
-     </tr>
+        <td><audio controls=""><source src="audio/reduced/3_test_mode_style.wav" type="audio/wav" /></audio></td>
+        </tr>
  </tbody>
  </table>
-  </li>
+  </li> -->
 
-  <li>Colors of the Wind (Unsmooth Voice at "Grin")
+  <!-- <li>Colors of the Wind (Unsmooth Voice at "Grin")
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
          <th>Defect Reducer Output</th>
-         <!-- <th>VITs</th> -->
      </tr>
      </thead>
      <tbody>
       <tr>
         <td><audio controls=""><source src="audio/orig/colors_before.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/reduced/colors_before_colors_before_mode_style.wav" type="audio/wav" /></audio></td>
-        <!-- <td><audio controls=""><source src="audio/recon/colors_vits.wav" type="audio/wav" /></audio></td> -->
-     </tr>
+        <td><audio controls=""><source src="audio/reduced/1_test_mode_style.wav" type="audio/wav" /></audio></td>
+      </tr>
  </tbody>
  </table>
-  </li>
+  </li> -->
 
   <p>Now, let's check the base synthesizer output and its interpolation with defect-reduced singing. </p>
   <li>Happy Ending
@@ -95,7 +89,7 @@
       <tr>
         <td><audio controls=""><source src="audio/orig/happyEndingOrig.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/base_out/happyending_vits.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/happyEndingOrig_happyending_vits_mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/2_2_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
   </tbody>
   </table>
@@ -114,7 +108,7 @@
       <tr>
         <td><audio controls=""><source src="audio/orig/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/base_out/theDay_vits.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/theDay_vits_theDayYouWentAwayUnnatural_mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/3_3_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
   </tbody>
   </table>
@@ -133,13 +127,13 @@
       <tr>
         <td><audio controls=""><source src="audio/orig/colors_before.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/base_out/colors_vits.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/colors_before_colors_vits_mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/interpolate/1_1_mode_style.wav" type="audio/wav" /></audio></td>
       </tr>
   </tbody>
   </table>
   </li>
 
-  <li>Let It Go
+  <!-- <li>Let It Go
     <table style="width: 80%;">
      <thead>
      <tr>
@@ -175,8 +169,8 @@
       </tr>
   </tbody>
   </table>
-  </li>
-
+  </li> -->
+<!-- 
   <li>You Raise Me Up
     <table style="width: 80%;">
      <thead>
@@ -194,7 +188,7 @@
       </tr>
   </tbody>
   </table>
-  </li>
+  </li> -->
 
     </main>
   </body>
