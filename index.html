@@ -12,8 +12,8 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">FlexVoice</h1>
-      <h2 class="project-tagline"></h2>
+      <!-- <h1 class="project-name">AdjVoice</h1> -->
+      <!-- <h2 class="project-tagline"></h2> -->
       
       
     </header>
@@ -22,180 +22,421 @@
 
 <!-- <i>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</i> -->
 <ol>
-  <p>Welcome to FlexVoice. Let's first examine the Defect Reducer effect. </p>
+  <p>Welcome to deep-learning-based voice beautifier user study. The study consists 15 audio pieces, which examines the general voice improvement and defect reduction effects. Please follow instructions on this page and record your answers inside the following Google form:</p>
 
-  <li>Happy Ending (Tremble at "Memories")
+  <button onclick="openNewWindow()">Answer Sheet</button>
+
+    <script>
+        function openNewWindow() {
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSdUubVfbG7zp_UqmRaZoODywNIchQH_ewoU0C0EGO5K-X12DA/viewform?usp=sharing', '_blank');
+        }
+  </script>
+  <p>To improve result consistency, please rest for at least 5 minutes after every 20 minutes. 
+    Please rest whenever you feel fatigued and record your answers 
+    promptly to prevent inaccuracy caused by forgetting.</p>
+  <p>You will hear 15 pieces of original singing and 3 different voice beautifying methods. Please rate the original singing and then the beautified singing by a method. Please also rate the speaker consistency or compare two methods by following the questions below. Note that some audio differences can be subtle.</p>
+
+  <li>Ren Jian 1
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Defect Reducer Output</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+         <th>Method 3 Output</th>
      </tr>
      </thead>
      <tbody>
       <tr>       
-        <td><audio controls=""><source src="audio/orig/happyEndingOrig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/reduced/2_test_mode_style.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before1.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before1_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_after1.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before1_beaut_gaussian.wav" type="audio/wav" /></audio></td>
         </tr>
  </tbody>
  </table>
   </li>
 
-  <!-- <li>The Day You Went Away (Unnatural high-pitch Voice)
+    <ol>
+      <li>Please rate the level of singing skilfullness (<strong>beauty</strong>) for original singing on a scale of 1-5 (1: 0-20 percentile; 5: 80-100 percentile of singing in general);</li>
+      <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+      <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+      <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
+      <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
+  </ol>
+
+  <li>Ren Jian 2
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Defect Reducer Output</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+         <th>Method 3 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/reduced/3_test_mode_style.wav" type="audio/wav" /></audio></td>
+      <tr>       
+        <td><audio controls=""><source src="audio/nsvb_before2.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before2_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_after2.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before2_beaut_gaussian.wav" type="audio/wav" /></audio></td>
         </tr>
  </tbody>
  </table>
-  </li> -->
+  </li>
 
-  <!-- <li>Colors of the Wind (Unsmooth Voice at "Grin")
+  <ol>
+      <li>Please rate the level of singing skilfullness (<strong>beauty</strong>) for original singing on a scale of 1-5 (1: 0-20 percentile; 5: 80-100 percentile of singing in general);</li>
+      <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+      <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+      <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
+      <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
+  </ol>
+
+  <li>Ren Jian 3
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Defect Reducer Output</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+         <th>Method 3 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/colors_before.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/reduced/1_test_mode_style.wav" type="audio/wav" /></audio></td>
-      </tr>
+      <tr>       
+        <td><audio controls=""><source src="audio/nsvb_before3.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before3_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_after3.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before3_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
  </tbody>
  </table>
-  </li> -->
+  </li>
+  <ol>
+    <li>Please rate the level of singing skilfullness (<strong>beauty</strong>) for original singing on a scale of 1-5 (1: 0-20 percentile; 5: 80-100 percentile of singing in general);</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
+    <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
+  </ol>
 
-  <p>Now, let's check the base synthesizer output and its interpolation with defect-reduced singing. </p>
-  <li>Happy Ending
+  <li>Pao Mo
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Base Synthesizer Output</th>
-         <th>0.5 Base Singing + 0.5 Defect Reduced Singing</th>
-         <th>0.75 Base Singing + 0.25 Defect Reduced Singing</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+         <th>Method 3 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/happyEndingOrig.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/base_out/happyending_vits.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/2_2_mode_style.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/0.75/2_2_mode_style.wav" type="audio/wav" /></audio></td>
-      </tr>
-  </tbody>
-  </table>
+      <tr>       
+        <td><audio controls=""><source src="audio/nsvb_before4.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before4_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_after4.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before4_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+ </tbody>
+ </table>
   </li>
 
-   <li>The Day You Went Away
+    <ol>
+      <li>Please rate the level of singing skilfullness (<strong>beauty</strong>) for original singing on a scale of 1-5 (1: 0-20 percentile; 5: 80-100 percentile of singing in general);</li>
+      <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+      <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+      <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
+      <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
+      <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
+  </ol>
+
+  <li>Guang Nian Zhi Wai
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Base Synthesizer Output</th>
-         <th>0.5 Base Singing + 0.5 Defect Reduced Singing</th>
-         <th>0.75 Base Singing + 0.25 Defect Reduced Singing</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+         <th>Method 3 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/theDayYouWentAwayUnnatural.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/base_out/theDay_vits.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/3_3_mode_style.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/0.75/3_3_mode_style.wav" type="audio/wav" /></audio></td>
-      </tr>
-  </tbody>
-  </table>
+      <tr>       
+        <td><audio controls=""><source src="audio/nsvb_before5.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before5_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_after5.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/nsvb_before5_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+ </tbody>
+ </table>
   </li>
-  
+
+  <ol>
+    <li>Please rate the level of singing skilfullness (<strong>beauty</strong>) for original singing on a scale of 1-5 (1: 0-20 percentile; 5: 80-100 percentile of singing in general);</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
+    <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
+  </ol>
+
   <li>Colors of the Wind
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Base Synthesizer Output</th>
-         <th>0.5 Base Singing + 0.5 Defect Reduced Singing</th>
-         <th>0.75 Base Singing + 0.25 Defect Reduced Singing</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/colors_before.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/base_out/colors_vits.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/1_1_mode_style.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/0.75/1_1_mode_style.wav" type="audio/wav" /></audio></td>
-      </tr>
-  </tbody>
-  </table>
+      <tr>       
+        <td><audio controls=""><source src="audio/colors_ugly.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/colors_ugly_baseline.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/colors_ugly_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
   </li>
 
-  <!-- <li>Let It Go
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+  </ol>
+ 
+  <li>First Love 1
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Base Synthesizer Output</th>
-         <th>Interpolation (Preference Adaptor) Output</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/letItGoMale.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/base_out/letItGoMale_svc_out.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/letItGoMale_svc_out_letItGoMale_mode_style.wav" type="audio/wav" /></audio></td>
-      </tr>
-  </tbody>
-  </table>
+      <tr>       
+        <td><audio controls=""><source src="audio/first_love1.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/first_love1_baseline.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/first_love1_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
   </li>
-  
-  <li>Rolling in the Deep
+
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+  </ol>
+
+  <li>First Love 2
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Base Synthesizer Output</th>
-         <th>Interpolation (Preference Adaptor) Output</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/rolling.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/base_out/rolling_svc_out.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/rolling_svc_out_rolling_mode_style.wav" type="audio/wav" /></audio></td>
+      <tr>       
+        <td><audio controls=""><source src="audio/first_love2.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/first_love2_baseline.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/first_love2_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
+  </ol>
+
+  <li>Reflection
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Method 1 Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>       
+        <td><audio controls=""><source src="audio/reflection_clipped.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/reflection_clipped_beaut_gaussian.wav" type="audio/wav" /></audio></td>
       </tr>
-  </tbody>
-  </table>
-  </li> -->
-<!-- 
+    </tbody>
+    </table>
+  </li>
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+  </ol>
+
+  <li>Whole New World
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Method 1 Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>       
+        <td><audio controls=""><source src="audio/wholeNewWorldOrig.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/wholeNewWorldOrig_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+      </tr>
+    </tbody>
+    </table>
+  </li>
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+  </ol>
+
+
+  <li>Its My Life
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Method 1 Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>       
+        <td><audio controls=""><source src="audio/its_my_life3.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/its_beaut3.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+  </ol>
+
+  <li>Ming Tian Ni Hao
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>       
+        <td><audio controls=""><source src="audio/mingtian.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/mingtian_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/mingtian_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+
+  <ol>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+  </ol>
+
+  <li>Shi Yi
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>       
+        <td><audio controls=""><source src="audio/shiyi.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/shiyi_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/shiyi_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+
+  <ol>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+  </ol>
+
+  <li>Only Love
+    <table style="width: 80%;">
+     <thead>
+     <tr>
+         <th>Original</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
+     </tr>
+     </thead>
+     <tbody>
+      <tr>       
+        <td><audio controls=""><source src="audio/Only_love_bad.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/Only_love_bad_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/Only_love_bad_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+
+  <ol>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+  </ol>
+
   <li>You Raise Me Up
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
-         <th>Base Synthesizer Output</th>
-         <th>Interpolation (Preference Adaptor) Output</th>
+         <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
      </tr>
      </thead>
      <tbody>
-      <tr>
-        <td><audio controls=""><source src="audio/orig/you_raise_me_up_ugly.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/base_out/you_raise_me_up_ugly_svc_out.wav" type="audio/wav" /></audio></td>
-        <td><audio controls=""><source src="audio/interpolate/you_raise_me_up_ugly_svc_out_you_raise_me_up_ugly_mode_style_pca.wav" type="audio/wav" /></audio></td>
-      </tr>
-  </tbody>
-  </table>
-  </li> -->
-
+      <tr>       
+        <td><audio controls=""><source src="audio/you_raise_me_up_ugly.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/you_raise_me_up_ugly_baseline_.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/you_raise_me_up_ugly_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        </tr>
+    </tbody>
+    </table>
+  </li>
+  <ol>
+    <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
+    <li>Please rate the level of <strong>beauty</strong> of method 1 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing, on the same scale (1: completely different singers; 5: the same singer);</li>
+    <li>Please rate the level of <strong>beauty</strong> of method 2 singing;</li>
+    <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+  </ol>
+  <p>That's all. Thank you!</p>
     </main>
   </body>
 </html>
