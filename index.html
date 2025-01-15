@@ -22,7 +22,7 @@
 
 <!-- <i>Note that the singer in the testing data could <strong>not</strong> be found in the training data.</i> -->
 <ol>
-  <p>Welcome to deep-learning-based voice beautifier user study. The study consists of 17 audio pieces, which examines the general voice improvement, defect reduction effects and speaker consistency. Please follow instructions on this page and record your answers inside the following Google form:</p>
+  <p>Welcome to deep-learning-based voice beautifier user study. The study consists of 16 audio pieces, which examines the general voice improvement, defect reduction effects and speaker consistency. Please follow instructions on this page and record your answers inside the following Google form:</p>
 
   <button onclick="openNewWindow()">Answer Sheet</button>
 
@@ -34,7 +34,7 @@
   <p>To improve result consistency, please rest for at least 5 minutes after every 20 minutes. 
     Please rest whenever you feel fatigued and record your answers 
     promptly to prevent inaccuracy caused by forgetting. This user study needs to be completed on PC instead of mobile phones.</p>
-  <p>You will hear 18 pieces of original singing and 3 different voice beautifying methods with RANDOM index label, and DECIMAL ratings are allowed.</p>
+  <p>You will hear 16 pieces of original singing and 3 different voice beautifying methods with RANDOM index label, and DECIMAL ratings are allowed.</p>
 
   <h1>Section 1</h1>
   <p>This is the most time-consuming section. Please rate the original singing for its beauty level and then speaker consistency. Repeat for other methods. Lastly, please compare two methods by following the questions below. Note that the audio differences in this section can be subtle.</p>
@@ -132,7 +132,7 @@
     <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
     <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
   </ol>
-
+<!-- 
   <li>Pao Mo
     <table style="width: 80%;">
      <thead>
@@ -195,7 +195,7 @@
     <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
     <li>Please rate the <strong>speaker consistency</strong> for method 3 singing;</li>
     <li>Please rate how method 3 singing <strong>compares</strong> to method 2 singing on a scale of -2 to 2 (2: obviously better; 1: noticeably better; 0: the same; -1: noticeably worse; -2: obviously worse);</li>
-  </ol>
+  </ol> -->
 
   <h1>Section 2</h1>
   <p>You have completed the most time-consuming section, and the remaining should be easier. Please compare singing from two methods.</p>
@@ -271,6 +271,7 @@
          <th>Original</th>
          <th>Method 1 Output</th>
          <th>Method 2 Output</th>
+         <th>Method 3 Output</th>
      </tr>
      </thead>
      <tbody>
@@ -278,6 +279,7 @@
         <td><audio controls=""><source src="audio/colors_ugly.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/colors_ugly_beaut_gaussian.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/colors_ugly_baseline.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/colors_ugly_beaut_gaussian_adain_100_.wav" type="audio/wav" /></audio></td>
       </tr>
     </tbody>
     </table>
@@ -289,6 +291,7 @@
     <li>Please rate the <strong>speaker consistency</strong> for method 1 singing, with respect to the original singing (1: completely different singers; 5: the same singer);</li>
     <li>Please rate the <strong>beauty</strong> level for method 2 singing;</li>
     <li>Please rate the <strong>speaker consistency</strong> for method 2 singing;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 3 singing;</li>
   </ol>
  
   <li>First Love 2
@@ -370,12 +373,14 @@
      <tr>
          <th>Original</th>
          <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
      </tr>
      </thead>
      <tbody>
       <tr>       
         <td><audio controls=""><source src="audio/wholeNewWorldOrig.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/wholeNewWorldOrig_beaut_gaussian.wav" type="audio/wav" /></audio></td>
+        <td><audio controls=""><source src="audio/wholeNewWorldOrig_adain_100_.wav" type="audio/wav" /></audio></td>
       </tr>
     </tbody>
     </table>
@@ -386,19 +391,21 @@
   </ol>
 
 
-  <li>Its My Life
+  <li>It's My Life
     <table style="width: 80%;">
      <thead>
      <tr>
          <th>Original</th>
          <th>Method 1 Output</th>
+         <th>Method 2 Output</th>
      </tr>
      </thead>
      <tbody>
       <tr>       
         <td><audio controls=""><source src="audio/its_my_life3.wav" type="audio/wav" /></audio></td>
         <td><audio controls=""><source src="audio/its_beaut3.wav" type="audio/wav" /></audio></td>
-        </tr>
+        <td><audio controls=""><source src="audio/its_beaut3_adain_100_.wav" type="audio/wav" /></audio></td>  
+      </tr>
     </tbody>
     </table>
   </li>
@@ -406,6 +413,7 @@
   <ol>
     <li>Please rate the level of <strong>beauty</strong> of original singing;</li>
     <li>Please rate the <strong>beauty</strong> level for method 1 singing on the same scale;</li>
+    <li>Please rate the <strong>beauty</strong> level for method 2 singing on the same scale;</li>
   </ol>
 
   <li>Ming Tian Ni Hao
@@ -525,6 +533,7 @@
  </table>
   </li>
     <ol>
+      <li>Please rate the level of singing skilfullness (<strong>beauty</strong>) for style singing on a scale of 1-5 (1: strongly unacceptable; 2: weakly unacceptable; 3: borderline; 4: weakly acceptable; 5: strongly acceptable);</li>
       <li>Please choose the singing that sounds more similar to the "Style" audio;</li>
     </ol>
   
